@@ -1,93 +1,170 @@
-body {
-    font-family: 'Vazir', sans-serif;
-    background: linear-gradient(135deg, #fceabb, #f8b500);
-    margin: 0;
-    padding: 0;
-    direction: rtl;
-  }
-  
-  .container {
-    max-width: 600px;
-    margin: 40px auto;
-    background: #ffffff;
-    padding: 30px;
-    border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-  }
-  
-  h1, h2 {
-    text-align: center;
-    color: #333;
-  }
-  
-  textarea {
-    width: 100%;
-    height: 120px;
-    margin-bottom: 15px;
-    padding: 15px;
-    font-size: 16px;
-    border: 2px solid #ccc;
-    border-radius: 12px;
-    transition: border 0.3s;
-  }
-  
-  textarea:focus {
-    border-color: #f8b500;
-    outline: none;
-  }
-  
-  button {
-    display: block;
-    width: 100%;
-    padding: 12px;
-    font-size: 16px;
-    background-color: #f8b500;
-    color: white;
-    border: none;
-    border-radius: 12px;
-    cursor: pointer;
-    transition: background 0.3s;
-  }
-  
-  button:hover {
-    background-color: #e6a400;
-  }
-  
-  ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 20px;
-  }
-  
-  li {
-    background: #fff9e6;
-    margin-bottom: 10px;
-    padding: 15px;
-    border-radius: 10px;
-    position: relative;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-  }
-  
-  li button {
-    margin-top: 10px;
-    margin-right: 10px;
-    padding: 6px 12px;
-    font-size: 14px;
-    border-radius: 6px;
-    background-color: #888;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-  
-  li button:hover {
-    opacity: 0.9;
-  }
-  
-  li button:first-of-type {
-    background-color: #4caf50;
-  }
-  
-  li button:last-of-type {
-    background-color: #f44336;
-  }
+    /* Reset و تنظیمات پایه */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Vazir', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    
+    body {
+      background: linear-gradient(135deg, #f5f7fa 0%, #ffe6cc 100%);
+      color: #333;
+      line-height: 1.6;
+      padding: 10px;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    
+    .container {
+      width: 100%;
+      max-width: 500px;
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(5px);
+      margin: 20px 0;
+    }
+    
+    h1 {
+      text-align: center;
+      color: #ff8c00;
+      margin-bottom: 20px;
+      font-size: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+    
+    h2 {
+      margin: 25px 0 15px;
+      color: #555;
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    textarea {
+      width: 100%;
+      height: 120px;
+      padding: 15px;
+      border: 2px solid #eee;
+      border-radius: 10px;
+      resize: none;
+      font-size: 1rem;
+      margin-bottom: 15px;
+      transition: all 0.3s ease;
+      background: rgba(255, 255, 255, 0.8);
+    }
+    
+    textarea:focus {
+      outline: none;
+      border-color: #ff8c00;
+      box-shadow: 0 0 0 3px rgba(255, 140, 0, 0.2);
+    }
+    
+    button {
+      width: 100%;
+      padding: 12px;
+      background: linear-gradient(to right, #ff8c00, #ffaa00);
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    }
+    
+    button:active {
+      transform: translateY(0);
+    }
+    
+    ul {
+      list-style: none;
+      margin-top: 20px;
+    }
+    
+    .note-item {
+      background: white;
+      padding: 15px;
+      margin-bottom: 12px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+      position: relative;
+      border-right: 4px solid #ff8c00;
+      animation: fadeIn 0.3s ease-out;
+    }
+    
+    .note-text {
+      margin-bottom: 10px;
+      word-break: break-word;
+    }
+    
+    .note-date {
+      font-size: 0.8rem;
+      color: #777;
+      margin-bottom: 10px;
+    }
+    
+    .note-actions {
+      display: flex;
+      gap: 8px;
+    }
+    
+    .note-actions button {
+      flex: 1;
+      padding: 8px;
+      font-size: 0.8rem;
+    }
+    
+    .delete-btn {
+      background: linear-gradient(to right, #ff4d4d, #ff6666);
+    }
+    
+    .edit-btn {
+      background: linear-gradient(to right, #4CAF50, #66BB6A);
+    }
+    
+    .empty-state {
+      text-align: center;
+      color: #777;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    /* حالت موبایل */
+    @media (max-width: 480px) {
+      .container {
+        padding: 15px;
+        border-radius: 0;
+      }
+      
+      h1 {
+        font-size: 1.3rem;
+      }
+      
+      textarea {
+        height: 100px;
+        padding: 12px;
+      }
+      
+      .note-item {
+        padding: 12px;
+      }
+    }
