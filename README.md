@@ -23,7 +23,8 @@ This project allows users to add, view, and delete notes with an intuitive and e
 
 ## 📷Preview
 
-![Screenshot](https://github.com/YALDAKHOSHPEY/Note/blob/e08838ddb6e0d416ca86793e83bad27edd536a47/Images/Screenshot.png)
+![Screenshot](https://github.com/VIDAKHOSHPEY22/Note/blob/4502bebf1c77057fda2cbea5ffef361cce200db4/Images/Screenshot.png)
+![Screenshot](https://github.com/VIDAKHOSHPEY22/Note/blob/4502bebf1c77057fda2cbea5ffef361cce200db4/Images/Screenshot.png)
 
 ---
 ## 📁 Project Structure
