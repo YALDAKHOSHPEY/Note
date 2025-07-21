@@ -1,22 +1,26 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="fa" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>دفترچه یادداشت من</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  
   <div class="container">
-    <h1>📝 دفترچه یادداشت من</h1>
-
-    <textarea id="note-input" placeholder="یادداشت خود را اینجا بنویس..."></textarea>
+    <h1><span>📝</span> دفترچه یادداشت من</h1>
+    
+    <textarea id="note-input" placeholder="یادداشت خود را اینجا بنویسید..."></textarea>
     <button id="save-btn">ذخیره یادداشت</button>
-
-    <h2>📒 یادداشت‌های ذخیره‌شده</h2>
-    <ul id="notes-list"></ul>
+    
+    <h2><span>📒</span> یادداشت‌های ذخیره‌شده</h2>
+    <ul id="notes-list">
+      <div class="empty-state">هنوز یادداشتی ثبت نشده است</div>
+    </ul>
   </div>
 
   <script src="script.js"></script>
+
 </body>
 </html>

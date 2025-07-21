@@ -23,14 +23,17 @@ This project allows users to add, view, and delete notes with an intuitive and e
 
 ## 📷Preview
 
-![Screenshot](https://github.com/YALDAKHOSHPEY/Note/blob/e08838ddb6e0d416ca86793e83bad27edd536a47/Images/Screenshot.png)
+![Screenshot1](https://github.com/VIDAKHOSHPEY22/Note/blob/dc7222a032f7e321ddb5a0b77bb20a8d19f8d26d/Images/Screenshot.png)
+
+
+![Screenshot2](https://github.com/VIDAKHOSHPEY22/Note/blob/dc7222a032f7e321ddb5a0b77bb20a8d19f8d26d/Images/Screenshot2.png)
 
 ---
 ## 📁 Project Structure
 
 ``` text
 ├── index.html ├── style.css ├── script.js
- Images/  └── screenshot.png
+ Images/  └── screenshot.png & screenshot2.png
 ```
 ## 🔧 How to Run
 
@@ -47,4 +50,4 @@ This project is licensed under the MIT License – see the [LICENSE](./LICENSE) 
 
 ### 👨‍💻 Author
 
-Made with ❤️ by **YALDA**
+Made with ❤️ by **YALDA** & **Vida**
